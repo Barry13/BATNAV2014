@@ -8,7 +8,7 @@ public class Joueur {
 		this.nom=nom;
 	}
 	
-	public void tirer (Coordonnees c, Carte g){   //return
+	public void tirer (Coordonnees c, Carte g){   //return pour tirer sur une case
 		g.tir(c);
 	}
 	
