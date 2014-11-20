@@ -2,7 +2,7 @@ package modele;
 
 import java.util.ArrayList;
 
-
+/* le projet */
 public class Bateau {
 	int taille;
 	ArrayList<Case> bateau = new ArrayList<>();

@@ -7,4 +7,5 @@ public class Constantes {
 	public static int tailleCuirasse	= 3;
 	public static int tailleZodiac		= 2;
 	public static int tailleGrille    	= 10;
+	public static int tailleCarte =10;
 }
