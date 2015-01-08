@@ -21,6 +21,7 @@ public class Lanceur {
 		carte.addObserver(grille2);
 		
 		for(int i=1; i<Constantes.nombreBateaux; i++){
+			
 		}
 		
 	}

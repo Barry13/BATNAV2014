@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Observable;
 
-
+/**
+ * <b> la carte représente le champs de bataille</b>
+ * <p> cette classe est observable, donc elle est observé par des classe qui ré
+ * @author Barry&Diagana
+ *
+ */
 public class Carte extends Observable {
 	
 	ArrayList<Bateau> listeBateaux = new ArrayList<Bateau>();  // Cest la liste des listelisteBateaux
 	
-	public String tir(Coordonnees c){
-		Bateau bat = new Bateau();
+	public String tir(Coordonnees c) {
+		Bateau bat = new Bateau (0, null);
 		Case caseTemp = new Case(); 
 		boolean test=false;
 		boolean test2=false;
@@ -48,7 +53,7 @@ public class Carte extends Observable {
 	
 	public boolean placer(Coordonnees c, int taille, String joueur){
 		
-		Bateau bat = new Bateau();
+		Bateau bat = new Bateau(0,null);
 		Case caseTemp = new Case(); 
 		boolean test=false;
 		
@@ -70,7 +75,7 @@ public class Carte extends Observable {
 			return false;
 		}
 		else{
-			listeBateaux.add(new Bateau(c,taille,joueur));
+			listeBateaux.add(new Bateau(0,null));
 			notify();
 			return true;
 		}

@@ -12,5 +12,6 @@ public abstract class Grille implements Observer {
 	public abstract void placerBateau();
 	public abstract Coordonnees tirer();
 	
+	
 
 }
